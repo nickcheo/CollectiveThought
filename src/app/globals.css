@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../../../Downloads/font/HelveticaNeueBlackCondensed.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+
+  font-family: 'Helvetica, Arial, sans-serif';
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+ 
+h1.display-2.text-bold {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* globals.css */
+.sidebar-link {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust padding as needed to separate the links */
+  display: block;
+  
+}
+
+.sidebar-link:hover {
+  /* Add styles for hover state if desired */
+  background-color: #333; /* Example background color */
+  color: gray
+}
+
+}
